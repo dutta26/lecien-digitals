@@ -1,0 +1,13 @@
+/* Variables */
+
+:root {
+    --color-white: #FFFFFF;
+    --color-logo: #FBB040;
+    --color-body: #181818;
+    --color-footer: rgb(38, 38, 38);
+    --color-black: rgb(16, 16, 16);
+    --color-modal: rgb(228, 228, 228);
+    --font-krub: 'Krub', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
+    --icon-down-arrow: url(../assets/down-arrow.png);
+}

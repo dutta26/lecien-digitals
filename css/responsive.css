@@ -1,0 +1,729 @@
+/* HERO LINE AND TEXT RESPONSIVENESS FOR DIFFERENT RESOLUTIONS */
+/* 1920 x 1080 */
+@media (width: 1920px) {
+
+    /* MAIN */
+    main {
+        padding: 4rem 0 0 0;
+    }
+
+    .landing-page {
+        margin: 0 0 4rem 0;
+    }
+
+    .hero-line {
+        top: 65%;
+    }
+
+    .hero-text {
+        top: 75%;
+        right: 67%;
+    }
+
+    .hero-para-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .landing-page .col-lg-4:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .design-revamped {
+        top: 50%;
+    }
+
+    /* RING */
+    .discover-skills {
+        top: 30rem;
+    }
+
+    .discover-skills-1 {
+        right: 105rem;
+    }
+
+    .discover-skills-2 {
+        left: 105rem;
+    }
+
+    /* FOLIO */
+    #folio .folio-line {
+        display: none;
+        width: 14.5vw;
+    }
+
+    #folio h5 {
+        padding: 2rem;
+        border-bottom: 2px solid var(--color-logo);
+    }
+
+    #folio a p {
+        padding: 3rem;
+    }
+
+    #folio .folio-triangle {
+        top: 90%;
+        left: 45%;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        top: 0;
+    }
+}
+
+/* 1366 x 768 */
+@media (width: 1366px) and (height: 768px) {
+
+    /* MAIN */
+    .hero-line {
+        top: 45%;
+    }
+
+    .hero-text {
+        top: 54.5%;
+    }
+
+    /* RING */
+    .discover-skills-1 {
+        right: 0;
+    }
+
+    .discover-skills-2 {
+        left: 0;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+        top: 22vh;
+    }
+}
+
+/* 1536 x 864 */
+@media (width: 1536px) and (height: 864px) {
+
+    /* RING */
+    .discover-skills-1 {
+        right: 82rem;
+    }
+
+    .discover-skills-2 {
+        left: 82rem;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+        top: 13vh;
+    }
+}
+
+/* Medium Laptop */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Nav menu */
+    .socials {
+        display: none !important;
+    }
+
+    /* Hero */
+
+    .hero-text {
+        top: 40%;
+    }
+
+    .hero-line {
+        top: 30%;
+    }
+
+    .hero-para-grid {
+        padding: 0 8rem 0 0;
+    }
+
+    .hero-para-grid h3 {
+        font-size: large;
+    }
+
+    .hero-para-grid p {
+        font-size: small;
+    }
+
+    .design-revamped {
+        font-size: x-large;
+    }
+
+    /* Discover Your Skills */
+    .discover-skills {
+        display: none;
+    }
+
+    .discover-skills-1 {
+        right: 78vw;
+    }
+
+    .discover-skills-2 {
+        left: 78vw;
+    }
+
+    /* Do You Know */
+    #do-you-know {
+        padding: 5rem 2rem;
+    }
+
+    /* Testimonials */
+    #testimonials {
+        padding: 5rem 2rem;
+    }
+
+    #testimonials .col-lg-6:nth-child(2) .row {
+        font-size: 10px;
+        column-gap: 2px;
+        display: flex;
+
+    }
+
+    .testimonials {
+        padding: 0;
+        top: 12vw;
+    }
+}
+
+@media (max-width: 992px) {
+    #infographics {
+        height: 20rem;
+    }
+
+    #ring {
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* HERO */
+    #landing-page .hero-line-mobile {
+        width: 15.5vh;
+    }
+
+    /* RING */
+    #ring .solar-svg-div {
+        display: none;
+    }
+
+    #ring .ring-div {
+        display: block !important;
+        position: relative;
+    }
+
+    #ring .ring-div img {
+        width: 100%;
+    }
+
+    #ring .ring-div h3 {
+        color: var(--color-white);
+        position: absolute;
+        top: 25%;
+    }
+
+    #ring .ring-div .ring-line {
+        transform: rotate(90deg);
+        height: 4px;
+        background-color: var(--color-white);
+        width: 40%;
+        position: absolute;
+        left: 30%;
+        top: 65%;
+    }
+
+    #ring .ring-div .white-box {
+        position: absolute;
+        margin: 0;
+        left: 48%;
+        top: 45%;
+    }
+
+    #ring .ring-div h4 {
+        color: var(--color-white);
+        font-family: var(--font-krub);
+        padding-top: 25%;
+        align-self: center;
+    }
+
+    #ring .ring-div .client {
+        right: 87%;
+    }
+
+    #ring .ring-div .designer {
+        left: 80%;
+    }
+
+    /* SCROLL REVEAL */
+    #scroll-reveal {
+        padding: 0;
+    }
+}
+
+/* Nest Hub Max */
+@media (width: 1280px) and (height: 800px) {
+    .testimonials {
+        padding: 0;
+    }
+}
+
+/* Surface Pro 7 */
+@media (width: 912px) and (height: 1368px) {
+    .testimonials {
+        display: none !important;
+    }
+}
+
+/* iPad Air */
+@media (width: 820px) and (height: 1180px) {
+
+    /* Hero */
+    .hero-line {
+        top: 20rem;
+    }
+
+    .hero-text {
+        top: 7%;
+    }
+
+    .hero-para-grid {
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Services */
+    #services {
+        padding: 5rem;
+    }
+}
+
+/* Samsung Galaxy S20 Ultra (Rotated) */
+@media (width: 915px) and (height: 412px) {
+
+    /* Hero */
+    .hero-line {
+        top: 20rem;
+    }
+
+    .hero-text {
+        top: 8%
+    }
+
+    .hero-para-grid {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* Pixel 5 (Rotated) */
+@media (width: 851px) and (height: 393px) {
+
+    /* Hero */
+    .hero-line {
+        top: 20rem;
+    }
+
+    .hero-text {
+        top: 8%;
+    }
+
+    .hero-para-grid {
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Serives */
+    #services {
+        padding: 5rem;
+    }
+}
+
+/* iPhone 12 Pro (Rotated) */
+@media (width: 844px) and (height: 390px) {
+
+    /* Hero */
+    .hero-line {
+        top: 20rem;
+    }
+
+    .hero-text {
+        top: 8%;
+    }
+
+    /* Services */
+    #services {
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Services */
+    #services {
+        padding: 5rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    /* .landing-page .col-lg-4:nth-child(1) { display: none; } */
+    .landing-page {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ring .discover-skills {
+        display: none !important;
+    }
+}
+
+@media (width: 1180px) and (height: 820px) {
+
+    /* Hero */
+    .hero-line {
+        right: 63vw;
+        top: 40%;
+    }
+
+    .hero-text {
+        top: 50%;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        display: none !important;
+    }
+
+    /* Footer */
+    footer .icons {
+        padding: 0 0.5rem;
+    }
+}
+
+/* Large Mobiles */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    /* Navigation Bar */
+    .landing-page .col-lg-4:nth-child(1) {
+        display: none;
+    }
+
+    .design-revamped {
+        display: none;
+    }
+
+    .navigation {
+        display: none !important;
+    }
+
+    .nav-icons>button {
+        display: none !important;
+    }
+
+    .lecien-digitals-logo {
+        display: block !important;
+        padding: 0;
+        width: 50px;
+    }
+
+    .socials {
+        display: none !important;
+    }
+
+    .hamburger-menu {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .ld {
+        display: none;
+    }
+
+    /* .ld-logo { width: 0; } */
+    .nav-contact {
+        display: none !important;
+    }
+
+    /* Hero */
+    .hero-para-grid {
+        display: none;
+    }
+
+    .lecien-digitals-hero {
+        width: 70vw;
+    }
+
+    .hero-line {
+        display: none;
+    }
+
+    .hero-text {
+        position: static;
+        padding-top: 45%;
+    }
+
+    /* Discover Your Skills */
+    .discover-skills {
+        display: none;
+    }
+
+    /* Services */
+    #services {
+        padding: 7rem 2rem;
+    }
+
+    /* FOLIO */
+    #folio {
+        padding: 7rem 2rem !important;
+    }
+
+    /* Do You Know */
+    #do-you-know {
+        padding: 7rem 2rem;
+    }
+
+    #do-you-know .col-lg-6:nth-child(2) {
+        width: 100%;
+        padding: 5rem 2rem 0rem;
+    }
+
+    /* Testimonials */
+    #testimonials {
+        padding: 5rem 2rem;
+    }
+
+    .testimonials {
+        display: none !important;
+    }
+
+    /* Footer */
+    footer .container-fluid {
+        padding: 4rem;
+    }
+
+    .icons {
+        padding: 0 0 0 4rem;
+    }
+
+    .icon {
+        padding: 0 1rem;
+    }
+
+    .footer-image {
+        padding: 1rem 0;
+    }
+
+    .footer-image img {
+        width: 50vw;
+    }
+}
+
+/* Small Mobiles */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    /* Navigation Bar */
+    .design-revamped {
+        display: none;
+    }
+
+    .landing-page .col-lg-4:nth-child(1) {
+        display: none;
+    }
+
+    .navigation {
+        display: none !important;
+    }
+
+    .nav-icons>button {
+        display: none !important;
+    }
+
+    .lecien-digitals-logo {
+        display: block !important;
+        padding: 0;
+        width: 35px;
+    }
+
+    /* .ld-logo { width: 0; } */
+    .socials {
+        display: none !important;
+    }
+
+    .hamburger-menu {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .ld {
+        display: none !important;
+    }
+
+    .nav-contact {
+        display: none !important;
+    }
+
+    /* Main */
+    /* Hero */
+    .lecien-digitals-hero {
+        width: 70vw;
+    }
+
+    .hero-para-grid {
+        display: none;
+    }
+
+    .hero-line {
+        display: none;
+    }
+
+    .hero-text {
+        position: static;
+        margin-top: 45%;
+    }
+
+    /* Discover Your Skills */
+    .discover-skills {
+        display: none;
+    }
+
+    /* Services */
+    #services {
+        padding: 5rem 2rem;
+    }
+
+    /* Do You Know */
+    #do-you-know {
+        padding: 5rem 2rem;
+    }
+
+    #do-you-know .col-lg-6:nth-child(2) {
+        width: 100%;
+        padding: 5rem 2rem 0rem;
+    }
+
+    /* Testimonials */
+    #testimonials {
+        padding: 5rem 2rem;
+    }
+
+    .testimonials {
+        display: none !important;
+    }
+
+    /* Footer */
+    footer .container-fluid {
+        padding: 2rem;
+    }
+
+    .icons {
+        padding: 2rem;
+    }
+
+    .icon {
+        padding: 0 1rem;
+    }
+
+    .footer-image {
+        padding: 1rem 0;
+    }
+
+    .footer-image img {
+        width: 50vw;
+    }
+}
+
+/* Folio */
+@media (max-width: 896px) {
+
+    /* Folio */
+    #folio {
+        padding: 5rem 2rem;
+    }
+
+    #folio .folio-cards {
+        display: none !important;
+    }
+
+    #carouselExample {
+        display: block !important;
+        width: 100vw;
+    }
+
+    #carouselExample h5 {
+        border-bottom: 2px solid var(--color-logo);
+    }
+
+    .active,
+    .carousel-item {
+        padding: 0 4rem;
+        height: 30vh;
+    }
+
+    #folio .folio-triangle {
+        left: 44%;
+    }
+
+    .carousel-item a {
+        text-decoration: none;
+        color: var(--color-white);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .hero-text {
+        padding-top: 45%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .lecien-digitals-hero {
+        width: 50vw;
+    }
+
+    .hero-line-mobile {
+        display: flex !important;
+        align-self: center;
+        width: 25vw;
+        height: 2px;
+        background-color: var(--color-white);
+        transform: rotate(90deg);
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%) rotate(90deg);
+    }
+
+    #scroll-reveal {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+}
+
+/* iPhone XR */
+@media (width: 414px) and (height: 844px) {
+
+    .hero-text {
+        right: 37%;
+        top: 60% !important;
+    }
+
+}

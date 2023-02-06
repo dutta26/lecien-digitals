@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecien Digitals</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Count Animation Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo-01.svg">
+
+</head>
+
+<body>
+
+    <!-- Sticky Contact Starts -->
+    <div class="modal fade" id="contactModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>CONTACT US FOR FURTHER QUERIES</h4>
+                    <a href="tel:+918777537231" target="_blank" class="sticky-contact">CALL</a>
+                    <a href="https://wa.me/message/QPEVWAC32GXNI1" target="_blank" class="sticky-contact">MESSAGE</a>
+                    <a href="https://calendly.com/leciendigitals/meetingcall" target="_blank"
+                        class="sticky-contact">BOOK A MEETING</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sticky Contact Ends -->
+
+    <!-- Sticky WhatsApp Starts -->
+    <div class="sticky sticky-whatsapp">
+        <a href="https://wa.me/message/QPEVWAC32GXNI1" target="_blank"><img class="whatsapp" src="./assets/whatsapp.png"
+                alt="WhatsApp Logo"></a>
+    </div>
+    <!-- Sticky WhatsApp Ends -->
+
+    <!-- Navigation Bar Starts -->
+    <section id="navbar" class="navbar fixed-top">
+
+        <div class="nav-1 d-flex">
+            <!-- Logo -->
+            <a class="d-flex align-items-center justify-content-between ld-logo" href="./index.html">
+                <img class="lecien-digitals-logo" src="./assets/logo-01.svg" alt="Lecien-Digitals-Logo">
+                <div class="ld">LECIEN DIGITALS</div>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="navigation navbar d-flex align-items-center justify-content-between">
+                <ul class="navbar d-flex align-items-center justify-content-between">
+                    <li><a class="nav-link" href="#">HOME</a></li>
+                    <div class="nav-line"></div>
+                    <li><a class="nav-link" href="#services">SERVICES</a></li>
+                    <div class="nav-line"></div>
+                    <li><a class="nav-link" href="#folio">FOLIO</a></li>
+                    <div class="nav-line"></div>
+                    <li><a class="nav-link" href="#do-you-know">KNOW US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Navbar Socials Starts -->
+        <div class="nav-icons">
+            <div class="socials d-inline">
+                <a href="http://www.instagram.com/leciendigitals2022" target="_blank"><i
+                        class="fa-brands fa-instagram icon"></i></a>
+                <a href="https://www.behance.net/leciendigitals" target="_blank"><i
+                        class="fa-brands fa-behance icon"></i></a>
+                <a href="mailto:leciendigitals@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon"></i></a>
+            </div>
+            <button type="button contact-button" data-bs-toggle="modal" data-bs-target="#contactModal">CONTACT</button>
+        </div>
+        <!-- Navbar Socials Ends -->
+
+        <!-- Mobile Navbar Starts -->
+        <div id="mobile-navbar"
+            class="mobile-navbar container-fluid position-absolute d-none flex-column align-items-start justify-content-between">
+
+            <!-- Close Button Starts -->
+            <div onclick="toggleMenu()" id="close-btn" class="d-flex align-items-center justify-content-center">
+                <img src="./assets/close-button.png" alt="close-button">
+            </div>
+            <!-- Close Button Ends -->
+
+            <!-- <div class="container-fluid d-flex-justify-content-between"> -->
+
+            <ul class="menu">
+                <li><a onclick="toggleMenu()" href="#">HOME</a></li>
+                <li><a onclick="toggleMenu()" href="#services">SERVICES</a></li>
+                <li><a onclick="toggleMenu()" href="#folio">FOLIO</a></li>
+                <li><a onclick="toggleMenu()" href="#do-you-know">KNOW US</a></li>
+            </ul>
+            
+            <ul class="bottom-links align-self-center">
+                <li><a data-bs-toggle="modal" data-bs-target="#contactModal">CONTACT</a></li>
+                <li><a href="tel:+918777537231">CALL</a></li>
+                <li><a href="https://wa.me/message/QPEVWAC32GXNI1" target="_blank">MESSAGE</a></li>
+                <li><a href="https://calendly.com/leciendigitals/meetingcall" target="_blank">BOOK A MEETING</a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com/leciendigitals2022" target="_blank"><i
+                            class="fa-brands fa-instagram icon"></i></a>
+                    <a href="https://www.behance.net/leciendigitals" target="_blank"><i
+                            class="fa-brands fa-behance icon"></i></a>
+                    <a href="mailto:leciendigitals@gmail.com" target="_blank"><i
+                            class="fa-solid fa-envelope icon"></i></a>
+                </li>
+            </ul>
+            <!-- </div> -->
+
+        </div>
+        <!-- Mobile Navbar Ends -->
+
+
+        <!-- Hamburger Menu Starts -->
+        <div onclick="toggleMenu()" class="hamburger-menu d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-bars hamburger-menu"></i>
+        </div>
+        <!-- Hamburger Menu Ends -->
+
+
+
+    </section>
+    <!-- Navigation Bar Ends -->
+
+    <!-- Main Website Starts -->
+    <main id="main">
+
+        <div class="container-fluid">
+
+
+
+            <div class="row landing-page position-relative">
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <!-- DESIGN REVAMPED -->
+                    <div class="design-revamped">DESIGN REVAMPED</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    
+                    <!-- Landing Page Starts -->
+                    <section id="landing-page" class="d-flex flex-column-reverse">
+                        <div class="hero-line-mobile d-none"></div>
+                        <div class="hero-line text-center"><img src="./assets/home-hero.svg" alt=""></div>
+                        <div class="hero-text text-center">WE DESIGN<br>YOUR VISION</div>
+                        <div class="container-fluid d-flex align-items-center justify-content-center">
+                            <img class="lecien-digitals-hero" src="./assets/color-wheel2.png"
+                                alt="Lecien-Digitals-Hero">
+                        </div>
+                    </section>
+                    <!-- Landing Page Ends -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 hero-para-grid">
+                    <br>
+                    <br>
+                    <br>
+                    <!-- Hero Paragraph Starts -->
+                    <h3>MAKE YOUR BRAND A SIGNATURE</h3>
+                    <p>Good brand design is a visual
+                        element that effectively conveys a
+                        company's personality to its target audience.
+                    </p>
+                    <div><a class="book-meeting" href="https://calendly.com/leciendigitals/meetingcall"
+                            target="_blank">BOOK
+                            A MEETING</a></div>
+
+                    <!-- Hero Paragraph Ends -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Infographics -->
+        <section id="infographics" class="d-flex align-items-center">
+
+            <div class="container-fluid d-flex align-items-center justify-content-center">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+
+                        <div class="container-fluid infographic">
+                            <div class="parent">
+                                <div class="div1 d-flex align-items-center justify-content-center">
+                                    <div class="count" data-max="150"></div><span>+</span>
+                                </div>
+                                <div class="div2">
+                                    <div class="fw-bold">Satisfied</div>Clients
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+
+                        <div class="container-fluid infographic">
+                            <div class="parent">
+                                <div class="div1 d-flex align-items-center justify-content-center">
+                                    <div id="counter" class="counter-value" data-max="1000"></div><span>+</span>
+                                </div>
+                                <div class="div2">
+                                    <div class="fw-bold">Approved</div>Projects
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+
+                        <div class="container-fluid infographic">
+                            <div class="parent">
+                                <div class="div1 d-flex align-items-center justify-content-center">
+                                    <div id="counter" class="counter-value" data-max="50"></div><span>+</span>
+                                </div>
+                                <div class="div2">
+                                    <div class="fw-bold">Business</div>Families
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Ring Animation -->
+        <section id="ring">
+
+            <div class="discover-skills discover-skills-1 d-flex align-items-center">
+                <div class="white-box"></div> DISCOVER YOUR SKILLS
+            </div>
+
+            <!-- Solar System SVG Starts -->
+            <div class="solar-svg-div">
+                <svg id="Layer_1" class="solar-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1920 1080">
+                    <defs>
+                        <style>
+                            .cls-1,
+                            .cls-2,
+                            .cls-3 {
+                                isolation: isolate;
+                                fill: #fff;
+                                font-family: Krub-Bold, Krub;
+                                font-weight: 700;
+                            }
+
+                            .cls-1 {
+                                font-size: 25.89px;
+                            }
+
+                            .cls-2 {
+                                font-size: 24.37px;
+                            }
+
+                            .cls-3 {
+                                font-size: 50.26px;
+                            }
+
+                            .cls-4,
+                            .cls-6 {
+                                fill: none;
+                            }
+
+                            .cls-4 {
+                                stroke: #f2f2f2;
+                            }
+
+                            .cls-5 {
+                                fill: #fbb040;
+                            }
+
+                            .cls-6 {
+                                stroke: #fff;
+                            }
+                        </style>
+                    </defs>
+                    <g id="CLIENT"><text class="cls-1" transform="translate(32.54 485.48)">CLIENT</text></g>
+                    <g id="DESIGNER"><text class="cls-2" transform="translate(1768.54 568.37)">DESIGNER</text></g>
+                    <g id="DESIGN_SOLUTION" data-name="DESIGN SOLUTION"><text class="cls-3"
+                            transform="translate(848.72 493.99)">DESIGN</text><text class="cls-3"
+                            transform="translate(825.3 561)">SOLUTION</text></g>
+                    <g id="Group_64" data-name="Group 64">
+                        <path id="Oval" class="cls-4"
+                            d="M1031.91,363.34c384.29,147.88,665.45,346.71,628,444.1S1280.5,863.89,896.2,716s-665.45-346.71-628-444.1S647.62,215.46,1031.91,363.34Z" />
+                        <circle id="Circle_2-2" data-name="Circle 2-2" class="cls-5" cx="1565.88" cy="653.33"
+                            r="18.14" />
+                        <circle id="Circle_1_2" data-name="Circle 1 2" class="cls-5" cx="319.56" cy="395.65"
+                            r="18.14" />
+                    </g>
+                    <path id="Path_3561" data-name="Path 3561" class="cls-6" d="M292.78,399.61H185.51l-58,68.52" />
+                    <path id="Path_3562" data-name="Path 3562" class="cls-6" d="M1593.73,646.65H1701l58-68.51" />
+                </svg>
+            </div>
+
+            <div class="ring-div d-none">
+                <img src="./assets/ring.png" alt="customer-ring">
+                <h3 class="designer">DESIGNER</h3>
+                <h3 class="client">CLIENT</h3>
+                <div class="white-box"></div>
+                <div class="ring-line"></div>
+                <h4 class="design-solution fw-bold text-center">DESIGN<br>SOLUTION</h4>
+            </div>
+
+            <!-- Solar System SVG Ends -->
+
+            <div class="discover-skills discover-skills-2 d-flex align-items-center">
+                <div class="white-box"></div>DISCOVER YOUR SKILLS
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+
+            <h1>SERVICES</h1>
+            <div class="row text-start services">
+                <div class="col-lg-4">
+                    <h4>BRAND DESIGN</h4>
+                    <ul>
+                        <li>Logo</li>
+                        <li>Color Scheme</li>
+                        <li>Typography</li>
+                        <li>Other Design Components</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>ADVERTISING DESIGN</h4>
+                    <ul>
+                        <li>AD Posters</li>
+                        <li>Social Media Posts</li>
+                        <li>Banners</li>
+                        <li>Other Design Components</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>MARKETING MATERIALS</h4>
+                    <ul>
+                        <li>Business Card</li>
+                        <li>Brochure</li>
+                        <li>Flyers</li>
+                        <li>Other Design Components</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Smooth Scroll Reveal -->
+        <section id="scroll-reveal">
+
+            <video src="./assets/vid.mp4" autoplay muted loop></video>
+
+        </section>
+
+        <!-- Folio -->
+        <section id="folio">
+
+            <h1>FOLIO</h1>
+
+            <div class="container-fluid row d-flex justify-content-between">
+                <a href="https://www.behance.net/gallery/152203941/Branding-1" target="_blank"
+                    class="folio-cards col-lg-3 col-md-3 col-sm-3">
+                    <div class="folio-numbering">01</div>
+                    <h5 style="font-size: 22px;">BRAND DESIGN</h5>
+                    <p>The process of creating visual and textual elements that represent and communicate the identity
+                        of a brand.</p>
+                    <div class="folio-triangle"></div>
+                </a>
+                <a href="https://www.behance.net/gallery/156486405/Web-Design-2" target="_blank"
+                    class="folio-cards col-lg-3 col-md-3 col-sm-3">
+                    <div class="folio-numbering">02</div>
+                    <h5>WEB DESIGN</h5>
+                    <p>The process of creating and organizing the visual elements of a website.</p>
+                    <div class="folio-triangle"></div>
+                </a>
+                <a href="https://www.behance.net/gallery/152158975/Logofolio" target="_blank"
+                    class="folio-cards col-lg-3 col-md-3 col-sm-3">
+                    <div class="folio-numbering">03</div>
+                    <h5>LOGOFOLIO</h5>
+                    <p>A logo is a symbol or design that represents a company, organization, or brand.</p>
+                    <div class="folio-triangle"></div>
+                </a>
+                <a href="https://www.behance.net/gallery/153414945/Packaging" target="_blank"
+                    class="folio-cards col-lg-3 col-md-3 col-sm-3">
+                    <div class="folio-numbering">04</div>
+                    <h5>PACKAGING</h5>
+                    <p>A marketing tool to attract customers and convey information about the product.</p>
+                    <div class="folio-triangle"></div>
+                </a>
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.behance.net/gallery/152203941/Branding-1" target="_blank"
+                                class="folio-cards-c d-block w-100">
+                                <h5>BRAND DESIGN</h5>
+                                <p>The process of creating visual and textual elements that represent and communicate
+                                    the identity of a brand.</p>
+                                <div class="folio-triangle"></div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.behance.net/gallery/156486405/Web-Design-2" target="_blank"
+                                class="folio-cards-c d-block w-100">
+                                <h5>WEB DESIGN</h5>
+                                <p>The process of creating and organizing the visual elements of a website.</p>
+                                <div class="folio-triangle"></div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.behance.net/gallery/152158975/Logofolio" target="_blank"
+                                class="folio-cards-c d-block w-100">
+                                <h5>LOGOFOLIO</h5>
+                                <p>A logo is a symbol or design that represents a company, organization, or brand.</p>
+                                <div class="folio-triangle"></div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.behance.net/gallery/153414945/Packaging" target="_blank"
+                                class="folio-cards-c d-block w-100">
+                                <h5>PACKAGING</h5>
+                                <p>A marketing tool to attract customers and convey information about the product.</p>
+                                <div class="folio-triangle"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div>
+                <a href="https://www.behance.net/leciendigitals" class="folio-more align-self-center" target="_blank">MORE</a>
+            </div>
+
+
+        </section>
+
+        <!-- do-you-know -->
+        <section id="do-you-know">
+            <h1>DO YOU <span>KNOW ?</span></h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    WHAT IS THE PSYCHOLOGY OF COLOR SCHEMES FOR A CORPORATE DESIGN?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    The psychology of color scheme refers to the way that different colors can with
+                                    different
+                                    meanings and can evoke certain emotions in people. For affect a person's emotions
+                                    and
+                                    behavior. Different colors are associated
+                                    example, red is often associated with energy, passion, and excitement,
+                                    while blue is associated with calmness, trust, and stability.
+                                    In the context of corporate design, choosing the right color scheme can
+                                    be an important part of establishing a company's brand and
+                                    communicating its values to customers. For example, a company that
+                                    wants to convey a sense of trust and dependability may choose to use
+                                    blue in its branding.
+                                    Additionally, color can also play a role in how a customer perceives the
+                                    quality and value of a product or service. For example, black and silver often
+                                    associated
+                                    with health and environmentally friendly products. are often associated with luxury
+                                    and
+                                    high-end products, while green is
+                                    It is important to note that the psychological effects of color can vary
+                                    depending on a number of factors, such as cultural background and
+                                    personal experiences. Additionally, the meanings and associations of
+                                    colors can also change over time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    DO YOU KNOW WHAT A GOOD CORPORATE DESIGN IS?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Good corporate design refers to the visual identity and branding of a scheme,
+                                    typography,
+                                    and imagery, which are used consistently across company. This includes elements such
+                                    as the
+                                    company's logo, color
+                                    all communications and materials. Good corporate design helps to
+                                    to customers and other stakeholders. It should be simple, consistent, establish a
+                                    company's
+                                    brand and communicate its values and message
+                                    and easily recognizable. Additionally, it should be flexible enough to
+                                    work across different mediums, such as print and digital.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    DO YOU KNOW WHAT IS A GOOD LOGO DESIGN IS?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A good logo design is one that is simple, memorable, and timeless. It should also be
+                                    versatile, working well in different contexts and on various mediums. Additionally,
+                                    a good
+                                    logo should be appropriate for the brand and its target audience, and should
+                                    communicate the
+                                    brand's values and message effectively.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <img class="dyk-image" src="./assets/did-you-know-img.png" alt="did-you-know-img">
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <h2>WHY <span>US ?</span></h2>
+                        <p>
+                            <span>We design your vision</span>.
+                            Our designs are a combination of visual elements, typography, and layout that effectively
+                            communicates a message or idea to a targeted audience, which is visually appealing and easy
+                            to understand, while also being appropriate for the intended audience and context.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h2>ABOUT <span>US</span></h2>
+                        <p>
+                            <span>Hi There!</span>
+                            Lecien Digitals founded in 2022, is a design agency with a dedicated team having skills
+                            better than many with on-time completion and perfection. Before we started this, we had
+                            gained experience with all sorts of design challenges as freelancers. A group of friends
+                            with various talents joined hand in hand to form this agency with the dream to deliver and
+                            help startups and small businesses to become a brand.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 testimonials d-flex">
+                    <div>TESTIMONIALS</div>&nbsp;<div class="testimonials-line d-flex align-self-center"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="card" style="width: 18rem;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item fw-bold">SUHEL ROY</li>
+                                        <li class="list-group-item">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                        </li>
+                                        <li class="list-group-item">
+                                            Satisfied with the designs and quality work done by the team with on-time
+                                            completion. Looking forward to working with them in the future.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="card" style="width: 18rem;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item fw-bold">YUNHO</li>
+                                        <li class="list-group-item">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-hollow.png" alt="hollow-star">
+                                        </li>
+                                        <li class="list-group-item">
+                                            So far had a good experience with the team, Just had a little issue with the
+                                            pricing otherwise all good. Hope they grow more.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="card" style="width: 18rem;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item fw-bold">DEREK WILLIAM</li>
+                                        <li class="list-group-item">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                        </li>
+                                        <li class="list-group-item">
+                                            Wanted to give my startup a fresh look, so I contacted the team of Lecien
+                                            Digitals. As expected not disappointed by their work. Well done guys.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="card" style="width: 18rem;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item fw-bold">RAHUL SINHA</li>
+                                        <li class="list-group-item">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-filled.png" alt="filled-star">
+                                            <img src="./assets/star-hollow.png" alt="hollow-star">
+                                        </li>
+                                        <li class="list-group-item">
+                                            Cooperative team; assisted me to redesign my brand. Very helpful talented
+                                            guys. Nice work.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <!-- Main Website Ends -->
+
+    <!-- Footer Starts -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Footer Links Starts -->
+                <div class="col-lg-6">
+                    <h5>Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#main">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#services">Services</a></li>
+                        <li class="nav-item mb-2"><a href="#folio">Folio</a></li>
+                        <li class="nav-item mb-2"><a href="#do-you-know">Know Us</a></li>
+                        <li class="nav-item mb-2"><a href="tel:+918777537231">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="./terms-and-conditions.html" target="_blank">Terms and
+                                Conditions</a>
+                            <div class="icons">
+                                <a href="http://www.instagram.com/leciendigitals2022" target="_blank"><i
+                                        class="fa-brands fa-instagram icon"></i></a>
+                                <a href="https://www.behance.net/leciendigitals" target="_blank"><i
+                                        class="fa-brands fa-behance icon"></i></a>
+                                <a href="mailto:leciendigitals@gmail.com" target="_blank"><i
+                                        class="fa-solid fa-envelope icon"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Footer Links Ends -->
+
+                <!-- Footer Image Starts -->
+                <div class="col-lg-6 d-flex flex-column justify-content-between">
+                    <div class="footer-image d-flex align-items-center justify-content-center"><img
+                            src="./assets/footer.png" alt="footer-image"></div>
+                    <div class="text-center opacity-50">&copy; 2023 All Rights Reserved by Lecien Digitals</div>
+                </div>
+                <!-- Footer Image Ends -->
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
